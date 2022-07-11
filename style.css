@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
+
+/* .main {
+  
+} */
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+/* ************************************* */
+/********* SECTION HEADER  *************/
+/* ************************************* */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.logo-text {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #54bd95;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.nav-link:hover {
+  color: #54bd95;
+}
+
+.nav-btns {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.btn {
+  display: inline-block;
+  font-size: 1.8rem;
+}
+
+.login {
+  color: #54bd95;
+}
+
+.signup {
+  background-color: #54bd95;
+  padding: 1rem 2rem;
+  color: #fff;
+  border-radius: 1rem;
+}
+
+/* ************************************* */
+/********* SECTION HERO  *************/
+/* ************************************* */
+
+.section-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 3.5rem;
+  margin-top: 10rem;
+}
+
+.section-hero::after {
+  content: "";
+  position: absolute;
+  width: 63.4rem;
+  height: 63.4rem;
+
+  left: 7.37rem;
+  top: -55.35rem;
+  background: #52bdaa;
+  z-index: -10000;
+  filter: blur(1042px);
+}
+
+.hero-content {
+  padding-right: 7rem;
+  position: relative;
+}
+
+.main-header {
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 9rem;
+  color: #191a15;
+  z-index: 1000000;
+}
+
+.hero-content::after {
+  position: absolute;
+  content: "";
+  background-image: url(./images/underline.svg);
+  background-repeat: no-repeat;
+
+  top: 28rem;
+  left: -1rem;
+
+  width: 50rem;
+  height: 4rem;
+}
+.main-description {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3rem;
+  margin-top: 8rem;
+}
+.hero-btns {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.trial-btn {
+  padding: 1.5rem 3rem;
+  background-color: #54bd95;
+  border-radius: 20rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.demo-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  padding: 1.5rem 3rem;
+  font-weight: 500;
+  gap: 0.5rem;
+}
+/* ************************************* */
+/********* SECTION COMPANIES  *************/
+/* ************************************* */
+
+.companies {
+  margin-top: 10rem;
+}
+
+.companies-header {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.companies-Logo {
+  display: flex;
+  justify-content: space-around;
+}
+/* ************************************* */
+/********* SECTION SUPPORT  *************/
+/* ************************************* */
+
+.section-support {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+  margin-top: 10rem;
+  background-color: #f9f8fe;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 5rem 3.2rem;
+  margin-top: 12rem;
+}
+
+.secondary-header {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.support-desc-text {
+  font-size: 1.8rem;
+  margin-top: 4rem;
+  color: #5d5d5d;
+}
+
+.stars-class {
+  height: 2rem;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.support-rate {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rate-number {
+  font-size: 1.6rem;
+}
+.weight {
+  font-weight: 600;
+}
+
+.rate-person-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #a6a6a6;
+}
+
+.step {
+  display: flex;
+  gap: 1.5rem;
+  padding-right: 22rem;
+  margin-top: 5rem;
+}
+
+.step:first-child {
+  margin-top: 0;
+}
+.step-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.step-desc {
+  font-size: 1.6rem;
+  color: #5d5d5d;
+  margin-top: 1rem;
+}
+
+.step-img {
+  height: 6rem;
+}
+
+/* ************************************* */
+/********* SECTION FEATURES  *************/
+/* ************************************* */
+.features {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.feature-container {
+  display: flex;
+  gap: 7rem;
+}
+.fetures-header-div {
+  flex: 1;
+}
+.features-header {
+  font-size: 5rem;
+}
+
+.features-desc-div {
+  flex: 1.5;
+  height: 2rem;
+}
+.features-desc {
+  font-size: 2.5rem;
+  margin: 0 5rem;
+}
+
+.features-btn-div {
+  flex: 0.5;
+}
+
+.get-statr {
+  padding: 1.5rem 4rem;
+  background-color: #54bd95;
+  border-radius: 20rem;
+  color: #fff;
+  font-size: 2rem;
+}
