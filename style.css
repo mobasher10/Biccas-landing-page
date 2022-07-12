@@ -405,7 +405,7 @@ a {
   gap: 2rem;
   box-shadow: 0px 4px 9px rgb(0 0 0 / 10%);
   border-radius: 1rem;
-  padding: 3rem 2rem;
+  padding: 2rem;
 }
 
 .btn-monthly-plan {
@@ -423,6 +423,8 @@ a {
 .pricing-plan-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 3rem;
   margin-top: 10rem;
 }
 
@@ -485,4 +487,53 @@ a {
   font-size: 1.8rem;
   color: #333;
   font-weight: 500;
+}
+
+.plan-btn {
+  color: #54bd95;
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+.pro-card {
+  background-color: #54bd95;
+  /* padding-bottom: 1rem; */
+}
+
+.pro-header {
+  color: #fff;
+}
+
+.pro-desc {
+  color: #fff;
+  margin: 0;
+}
+
+.pro-price {
+  color: #fff;
+}
+.pro-price span {
+  color: #fff;
+}
+
+.pro-save {
+  background-color: #85dab9;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  margin: 1rem 6rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.pro-list {
+  background-color: #fff;
+}
+
+.pro-btn {
+  background-color: #54bd95;
+  color: #fff;
 }
