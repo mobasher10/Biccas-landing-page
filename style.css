@@ -312,6 +312,7 @@ a {
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
+  padding-bottom: 5rem;
 }
 .feature-item-header {
   font-size: 3rem;
@@ -325,5 +326,47 @@ a {
 }
 .feature-item-img {
   /* height: 100%; */
+  width: 100%;
+}
+
+/* ************************************* */
+/********* SECTION BENIFITS  *************/
+/* ************************************* */
+
+.section-benifits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10rem;
+  gap: 10rem;
+}
+
+.section-benifits-content {
+  padding-right: 20rem;
+}
+.section-benifits-header {
+  font-size: 5rem;
+  margin-bottom: 10rem;
+}
+
+.benifits-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 4rem;
+}
+
+.benifit {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.benifit-text {
+  font-size: 1.6rem;
+  color: #191a15;
+  font-weight: 500;
+}
+
+.benifits-img {
   width: 100%;
 }
