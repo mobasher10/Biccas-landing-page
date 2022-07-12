@@ -14,10 +14,6 @@ a {
   text-decoration: none;
 }
 
-/* .main {
-  
-} */
-
 .container {
   max-width: 144rem;
   margin: 0 auto;
@@ -345,7 +341,7 @@ a {
 }
 .section-benifits-header {
   font-size: 5rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .benifits-list {
@@ -369,4 +365,124 @@ a {
 
 .benifits-img {
   width: 100%;
+}
+
+/* ************************************* */
+/********* SECTION PRICING PLANS  *************/
+/* ************************************* */
+
+.section-pricing-plan {
+  margin-top: 10rem;
+  display: grid;
+}
+
+.plans-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.pricing-plan-card {
+  display: flex;
+  flex-direction: column;
+}
+.pricing-plan-header {
+  font-size: 4rem;
+  color: #191a15;
+}
+
+.pricing-plan-desc {
+  font-size: 1.6rem;
+  color: #5d5d5d;
+}
+
+.pricing-plan-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0px 4px 9px rgb(0 0 0 / 10%);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+}
+
+.btn-monthly-plan {
+  color: #191a15;
+  padding: 1rem 2rem;
+}
+
+.btn-yearly-plan {
+  background-color: #54bd95;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.pricing-plan-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10rem;
+}
+
+.pricing-plan-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 3rem;
+}
+
+.car-head {
+  text-align: center;
+  padding: 3rem;
+}
+
+.card-header {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #191a15;
+  margin-bottom: 1.5rem;
+}
+
+.card-desc {
+  font-size: 1.8rem;
+  color: #5d5d5d;
+  margin-bottom: 2rem;
+}
+
+.card-price {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.card-price span {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #5d5d5d;
+  margin-right: 0.5rem;
+}
+
+.card-features-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  gap: 4rem;
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 4rem 3rem;
+}
+
+.card-feature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card-feature span {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 500;
 }
