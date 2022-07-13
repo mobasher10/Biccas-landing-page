@@ -14,6 +14,13 @@ a {
   text-decoration: none;
 }
 
+textarea,
+label,
+input {
+  resize: none;
+  outline: none;
+}
+
 .container {
   max-width: 144rem;
   margin: 0 auto;
@@ -500,7 +507,25 @@ a {
 
 .pro-card {
   background-color: #54bd95;
+  overflow: hidden;
   /* padding-bottom: 1rem; */
+}
+
+.pro-head {
+  position: relative;
+  z-index: 10000000;
+}
+
+.pro-head::after {
+  content: "";
+  position: absolute;
+  width: 80rem;
+  height: 80rem;
+  left: -214px;
+  border-radius: 50%;
+  top: 14.1rem;
+  background: #6bc2a1;
+  z-index: -10000;
 }
 
 .pro-header {
@@ -514,6 +539,7 @@ a {
 
 .pro-price {
   color: #fff;
+  margin-top: 1rem;
 }
 .pro-price span {
   color: #fff;
@@ -531,9 +557,140 @@ a {
 
 .pro-list {
   background-color: #fff;
+  z-index: 10000000;
 }
 
 .pro-btn {
   background-color: #54bd95;
   color: #fff;
+}
+
+/* ************************************* */
+/* SECTION TESTIMONIALS  */
+/* ************************************* */
+
+.testimonials {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+  background-color: #161c28;
+  padding-bottom: 4rem;
+  color: #fff;
+  margin-bottom: 10rem;
+  padding-top: 5rem;
+}
+.testimonial-content {
+  padding: 0 3rem;
+}
+.testimonial-header {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.testimonial-desc {
+  font-size: 1.6rem;
+  color: #a6a6a6;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+.testimonial {
+  margin-top: 12rem;
+  position: relative;
+}
+
+.testimonial::after {
+  position: absolute;
+  content: "";
+  background-image: url(./images/testimonial-imgs/quots.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: -7rem;
+}
+.testimonial-text {
+  font-size: 1.6rem;
+  color: #a6a6a6;
+  font-weight: 500;
+}
+
+.testimonial-author {
+  color: #a6a6a6;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.testimonial-imgs {
+  display: flex;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.testimonial-img {
+  height: 6rem;
+}
+
+.contact-info {
+  background-color: #222938;
+  padding: 5rem 10rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.euro-icon {
+  height: 8rem;
+  align-items: center;
+}
+
+.form-desc {
+  font-size: 2rem;
+}
+
+.contact-form label {
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form label:first-child {
+  margin-top: 2rem;
+}
+.contact-form input {
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.message-area {
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.demo-btn {
+  background-color: #54bd95;
+  color: #fff;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.trial {
+  font-size: 1.4rem;
+  text-align: end;
+  margin-top: 1rem;
+}
+
+.free-trial-btn {
+  color: #a6a6a6;
 }
