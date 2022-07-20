@@ -22,12 +22,11 @@
   </head>
   <body>
     <main class="main">
-      <header class="container">
-        <nav class="navigation">
-          <a href="#" class="logo">
-            <h1 class="logo-text">Biccas</h1>
-          </a>
-
+      <header class="header">
+        <a href="#" class="logo">
+          <h1 class="logo-text">Biccas</h1>
+        </a>
+        <nav class="main-nav">
           <ul class="nav-list">
             <li><a href="#" class="nav-link">Home</a></li>
             <li><a href="#" class="nav-link">Products</a></li>
@@ -41,6 +40,11 @@
             <a href="#" class="btn signup">Sign Up</a>
           </ul>
         </nav>
+
+        <button class="humberger-menu">
+          <ion-icon name="menu-outline"></ion-icon>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
       </header>
       <section class="section-hero container">
         <div class="hero-content">
@@ -194,20 +198,13 @@
 
       <section class="features container">
         <div class="feature-container">
-          <div class="fetures-header-div">
-            <h3 class="features-header">Our Features you can get</h3>
-          </div>
+          <h4 class="features-header">Our Features you can get</h4>
+          <p class="features-desc">
+            We offer a variety of interesting features that you can help
+            increase yor productivity at work and manage your project easily
+          </p>
 
-          <div class="features-desc-div">
-            <p class="features-desc">
-              We offer a variety of interesting features that you can help
-              increase yor productivity at work and manage your project easily
-            </p>
-          </div>
-
-          <div class="features-btn-div">
-            <a href="#" class="btn get-statr">Get start</a>
-          </div>
+          <button class="btn get-statr">Get start</button>
         </div>
 
         <div class="feature-items">
@@ -454,7 +451,7 @@
             </ul>
           </div>
 
-          <div class="pricing-plan-card">
+          <div class="pricing-plan-card business-plan">
             <div class="car-head">
               <p class="card-header">Business</p>
               <p class="card-desc">
@@ -524,7 +521,6 @@
           </p>
 
           <div class="testimonial">
-            <!-- <div class="testimonial-container"></div> -->
             <p class="testimonial-text">
               I am very helped by this E-wallet application , my days are very
               easy to use this application and its very helpful in my life ,
@@ -580,7 +576,6 @@
             <label for="email">Email</label>
             <input type="email" class="email" placeholder="Enter your Email" />
             <label for="Message">Message</label>
-            <!-- <input type="text" class="Message" /> -->
             <textarea
               name="#"
               id="#"
@@ -609,45 +604,46 @@
                 placeholder="Enter your email here"
                 class="footer-email"
               />
+              <img src="./images/icons/green arrow.svg" alt="" />
             </div>
+          </div>
+
+          <div class="footer-nav">
+            <p class="footer-nav-text">Support</p>
+
+            <ul class="footer-nav-list">
+              <li><a href="#" class="footer-nav-link">Help centre</a></li>
+              <li>
+                <a href="#" class="footer-nav-link">Account information</a>
+              </li>
+              <li><a href="#" class="footer-nav-link">About</a></li>
+              <li><a href="#" class="footer-nav-link">Contact us</a></li>
+            </ul>
           </div>
 
           <div class="footer-nav">
             <p class="footer-nav-text">Help and Solution</p>
 
             <ul class="footer-nav-list">
-              <li><a href="#" class="footer-nav-link">Help centre</a></li>
+              <li><a href="#" class="footer-nav-link">Talk to support</a></li>
               <li>
-                <a href="#" class="footer-nav-link">Account information</a>
+                <a href="#" class="footer-nav-link">Support docs</a>
               </li>
-              <li><a href="#" class="footer-nav-link">About</a></li>
-              <li><a href="#" class="footer-nav-link">Contact us</a></li>
+              <li><a href="#" class="footer-nav-link">System status</a></li>
+              <li><a href="#" class="footer-nav-link">Covid responde</a></li>
             </ul>
           </div>
 
           <div class="footer-nav">
-            <p class="footer-nav-text">footer-nav</p>
+            <p class="footer-nav-text">Product</p>
 
             <ul class="footer-nav-list">
-              <li><a href="#" class="footer-nav-link">Help centre</a></li>
+              <li><a href="#" class="footer-nav-link">Update </a></li>
               <li>
-                <a href="#" class="footer-nav-link">Account information</a>
+                <a href="#" class="footer-nav-link">Security </a>
               </li>
-              <li><a href="#" class="footer-nav-link">About</a></li>
-              <li><a href="#" class="footer-nav-link">Contact us</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-nav">
-            <p class="footer-nav-text">footer-nav</p>
-
-            <ul class="footer-nav-list">
-              <li><a href="#" class="footer-nav-link">Help centre</a></li>
-              <li>
-                <a href="#" class="footer-nav-link">Account information</a>
-              </li>
-              <li><a href="#" class="footer-nav-link">About</a></li>
-              <li><a href="#" class="footer-nav-link">Contact us</a></li>
+              <li><a href="#" class="footer-nav-link">Beta test</a></li>
+              <li><a href="#" class="footer-nav-link">Pricing product</a></li>
             </ul>
           </div>
         </div>
@@ -666,5 +662,14 @@
         </div>
       </footer>
     </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

@@ -9,6 +9,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 62.5%;
   font-weight: 400;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -30,11 +31,19 @@ input {
 /* ************************************* */
 /********* SECTION HEADER  *************/
 /* ************************************* */
-.navigation {
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 4rem;
+  padding: 4rem;
+  position: relative;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
 }
 
 .logo-text {
@@ -82,6 +91,18 @@ input {
 
 .signup:hover {
   background-color: #439777;
+}
+
+.humberger-menu {
+  font-size: 4rem;
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.humberger-menu [name="close-outline"] {
+  display: none;
 }
 
 /* ************************************* */
@@ -273,37 +294,31 @@ input {
 }
 
 .feature-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 0.5fr;
+  align-items: center;
+  justify-content: center;
   gap: 7rem;
 }
-.fetures-header-div {
+/* .fetures-header-div {
   flex: 1;
-}
+} */
 .features-header {
   font-size: 5rem;
 }
 
-.features-desc-div {
-  flex: 1.5;
-  height: 2rem;
-}
 .features-desc {
   font-size: 2.5rem;
-  margin: 0 5rem;
-}
-
-.features-btn-div {
-  flex: 0.5;
-  display: flex;
-  align-items: center;
+  padding: 0 3rem;
 }
 
 .get-statr {
-  padding: 1.5rem 4rem;
+  padding: 2rem 4rem;
   background-color: #54bd95;
   border-radius: 20rem;
   color: #fff;
   font-size: 2rem;
+  border: none;
 }
 
 .feature-items {
@@ -636,6 +651,10 @@ input {
   background-color: #222938;
   padding: 5rem 10rem;
   border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-form {
@@ -743,18 +762,11 @@ input {
 }
 
 .input-email-div {
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  gap: 0.5rem;
 }
 
-.input-email-div::after {
-  position: absolute;
-  content: "";
-  background-image: url(./images/icons/green\ arrow.svg);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  left: 29.5rem;
-}
 .footer-nav-list {
   list-style: none;
   display: flex;
@@ -783,6 +795,8 @@ input {
   justify-content: space-between;
   font-size: 1.6rem;
   color: #fff;
+  gap: 2rem;
+  padding-bottom: 5rem;
 }
 
 .copyright ul {
